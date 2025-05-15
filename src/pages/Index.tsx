@@ -1,13 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { HeroCarousel } from "@/components/HeroCarousel";
+import { Header } from "@/components/Header";
+import { AboutSection } from "@/components/AboutSection";
+import { LeadershipSection } from "@/components/LeadershipSection";
+import { EventsSection } from "@/components/EventsSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <ThemeProvider defaultTheme="light">
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main>
+          <HeroCarousel />
+          <AboutSection />
+          <LeadershipSection />
+          <EventsSection />
+          <ContactSection />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </ThemeProvider>
   );
 };
 
