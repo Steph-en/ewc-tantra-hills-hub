@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, YouTube } from "lucide-react";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -37,7 +37,7 @@ export function Footer() {
                 className="bg-burgundy hover:bg-burgundy/80 text-white p-2 rounded-full"
                 aria-label="YouTube"
               >
-                <YouTube className="h-5 w-5" />
+                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>

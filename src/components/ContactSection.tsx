@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Facebook, Instagram, YouTube } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -126,7 +126,7 @@ export function ContactSection() {
                   href="#"
                   className="bg-burgundy hover:bg-burgundy/80 text-white p-2 rounded-full"
                 >
-                  <YouTube className="h-5 w-5" />
+                  <Youtube className="h-5 w-5" />
                 </a>
               </div>
             </div>
