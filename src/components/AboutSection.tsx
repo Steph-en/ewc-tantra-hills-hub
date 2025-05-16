@@ -9,7 +9,7 @@ export function AboutSection() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            About <span className="text-burgundy">Empowerment Worship Center</span>
+            About <span className="text-accent">Empowerment Worship Center</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A place of transformation, empowerment and divine encounter
@@ -34,19 +34,19 @@ export function AboutSection() {
 
             <div className="space-y-4">
               <div className="flex items-center">
-                <Church className="h-5 w-5 text-burgundy mr-3" />
+                <Church className="h-5 w-5 text-accent mr-3" />
                 <span>A place of worship and spiritual growth</span>
               </div>
               <div className="flex items-center">
-                <Users className="h-5 w-5 text-burgundy mr-3" />
+                <Users className="h-5 w-5 text-accent mr-3" />
                 <span>A loving and supportive community</span>
               </div>
               <div className="flex items-center">
-                <Calendar className="h-5 w-5 text-burgundy mr-3" />
+                <Calendar className="h-5 w-5 text-accent mr-3" />
                 <span>Regular events and programs for all ages</span>
               </div>
               <div className="flex items-center">
-                <MapPin className="h-5 w-5 text-burgundy mr-3" />
+                <MapPin className="h-5 w-5 text-accent mr-3" />
                 <span>Strategically located to serve the Tantra Hills community</span>
               </div>
             </div>

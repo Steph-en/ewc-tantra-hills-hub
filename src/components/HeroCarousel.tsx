@@ -103,7 +103,7 @@ export function HeroCarousel() {
                 {slide.buttonText && (
                   <Button
                     size="lg"
-                    className="bg-burgundy hover:bg-burgundy/80 text-white px-8 py-6 text-lg"
+                    className="bg-accent hover:bg-accent/80 text-white px-8 py-6 text-lg"
                     asChild
                   >
                     <a href={slide.buttonLink}>{slide.buttonText}</a>
@@ -138,7 +138,7 @@ export function HeroCarousel() {
             <button
               key={index}
               className={`w-3 h-3 rounded-full transition-all ${
-                index === currentSlide ? "bg-burgundy scale-125" : "bg-white/50"
+                index === currentSlide ? "bg-white scale-125" : "bg-white/50"
               }`}
               onClick={() => goToSlide(index)}
               aria-label={`Go to slide ${index + 1}`}

@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <span className="text-2xl font-bold text-burgundy">EWC</span>
+              <span className="text-2xl font-bold text-white">EWC</span>
               <span className="font-medium">Tantra Hills</span>
             </div>
             <p className="text-gray-300 max-w-md">
@@ -20,21 +20,21 @@ export function Footer() {
             <div className="flex space-x-4 mt-6">
               <a
                 href="#"
-                className="bg-burgundy hover:bg-burgundy/80 text-white p-2 rounded-full"
+                className="bg-accent hover:bg-accent/80 text-white p-2 rounded-full"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="bg-burgundy hover:bg-burgundy/80 text-white p-2 rounded-full"
+                className="bg-accent hover:bg-accent/80 text-white p-2 rounded-full"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="bg-burgundy hover:bg-burgundy/80 text-white p-2 rounded-full"
+                className="bg-accent hover:bg-accent/80 text-white p-2 rounded-full"
                 aria-label="YouTube"
               >
                 <Youtube className="h-5 w-5" />

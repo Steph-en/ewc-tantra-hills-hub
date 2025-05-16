@@ -20,8 +20,9 @@ export default {
 		},
 		extend: {
 			colors: {
-				burgundy: "#800020",
+				burgundy: "#800020", // kept for backward compatibility
 				ash: "#B2BEB5",
+				accent: "#222222", // new black accent color
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
