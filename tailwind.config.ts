@@ -20,9 +20,19 @@ export default {
 		},
 		extend: {
 			colors: {
-				burgundy: "#800020", // kept for backward compatibility
-				ash: "#B2BEB5",
-				accent: "#222222", // new black accent color
+				black: "#000000",
+                white: "#FFFFFF",
+                gray: {
+                    100: "#F7F7F7",
+                    200: "#E6E6E6",
+                    300: "#D4D4D4",
+                    400: "#A3A3A3",
+                    500: "#737373",
+                    600: "#525252",
+                    700: "#404040",
+                    800: "#262626",
+                    900: "#171717"
+                },
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
