@@ -1,4 +1,5 @@
 
+import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 
 type Leader = {
@@ -12,13 +13,13 @@ const leaders: Leader[] = [
   {
     name: "Prophet Gideon Danso",
     role: "General Overseer",
-    image: "https://images.unsplash.com/photo-1556157382-97eda2f9e2bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/w3i3unoq8nkrqbjevjjs",
     bio: "Prophet Gideon Danso is the visionary leader and founder of Empowerment Worship Center, with a powerful ministry that has transformed countless lives across Ghana and beyond.",
   },
   {
     name: "Pastor Desmond Larbi",
     role: "Campus Lead Pastor",
-    image: "https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/nqxbmzs7iekoulcmqouk",
     bio: "Pastor Desmond Larbi leads the Tantra Hills Campus with dedication and passion, bringing years of ministry experience and a heart for community transformation.",
   },
 ];
@@ -44,7 +45,7 @@ export function LeadershipSection() {
                   <img
                     src={leader.image}
                     alt={leader.name}
-                    className="w-full h-full object-cover aspect-square"
+                    className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="p-6 md:w-3/5">

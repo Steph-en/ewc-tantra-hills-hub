@@ -4,6 +4,7 @@ import { Users, Calendar, Church, MapPin } from "lucide-react";
 
 export function AboutSection() {
   return (
+    <>
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-12">
@@ -66,7 +67,7 @@ export function AboutSection() {
                 <img 
                   src="https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
                   alt="Church community"
-                  className="w-full h-full object-cover"
+                  className="h-[1] object-cover"
                 />
               </CardContent>
             </Card>
@@ -83,5 +84,6 @@ export function AboutSection() {
         </div>
       </div>
     </section>
+    </>
   );
 }
