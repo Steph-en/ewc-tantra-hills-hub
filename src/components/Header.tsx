@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { DonateModal } from "./DonateModal";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,9 +52,7 @@ export function Header() {
             </nav>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <Button className="bg-accent hover:bg-accent/80 text-white">
-                Donate
-              </Button>
+              <DonateModal />
             </div>
           </div>
 
@@ -85,9 +84,7 @@ export function Header() {
               <a href="#contact" className="text-foreground hover:text-accent transition-colors">
                 Contact
               </a>
-              <Button className="bg-accent hover:bg-accent/80 text-white w-full">
-                Donate
-              </Button>
+              <DonateModal className="w-full" />
             </nav>
           </div>
         )}

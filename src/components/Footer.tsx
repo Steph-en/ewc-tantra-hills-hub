@@ -1,5 +1,6 @@
 
 import { Facebook, Instagram, Youtube } from "lucide-react";
+import { DonateModal } from "./DonateModal";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -48,7 +49,7 @@ export function Footer() {
               <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a></li>
               <li><a href="#events" className="text-gray-300 hover:text-white transition-colors">Events</a></li>
               <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Donate</a></li>
+              <li className="pt-2"><DonateModal /></li>
             </ul>
           </div>
           <div>
