@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,7 +11,7 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
-import { Donate } from "lucide-react";
+import { HeartHandshake } from "lucide-react";
 
 interface DonateModalProps {
   className?: string;
@@ -73,7 +72,7 @@ export function DonateModal({ className }: DonateModalProps) {
         className={`bg-black hover:bg-black/80 text-white ${className}`} 
         onClick={() => setIsOpen(true)}
       >
-        <Donate className="mr-2 h-4 w-4" />
+        <HeartHandshake className="mr-2 h-4 w-4" />
         Donate
       </Button>
       
