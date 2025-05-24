@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import { DonateModal } from "./DonateModal";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +27,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-burgundy dark:text-white">
+            <span className="text-2xl font-bold text-accent dark:text-white">
               EWC
             </span>
             <span className={`font-medium ${isScrolled || mobileMenuOpen ? 'text-foreground' : 'text-white'}`}>
@@ -36,24 +37,22 @@ export function Header() {
 
           <div className="hidden md:flex items-center space-x-8">
             <nav className="flex items-center space-x-6">
-              <a href="#" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-burgundy dark:hover:text-burgundy transition-colors`}>
+              <a href="#" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
                 Home
               </a>
-              <a href="#about" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-burgundy dark:hover:text-burgundy transition-colors`}>
+              <a href="#about" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
                 About
               </a>
-              <a href="#events" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-burgundy dark:hover:text-burgundy transition-colors`}>
+              <a href="#events" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
                 Events
               </a>
-              <a href="#contact" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-burgundy dark:hover:text-burgundy transition-colors`}>
+              <a href="#contact" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
                 Contact
               </a>
             </nav>
             <div className="flex items-center space-x-4">
               <ThemeToggle />
-              <Button className="bg-burgundy hover:bg-burgundy/80 text-white">
-                Donate
-              </Button>
+              <DonateModal />
             </div>
           </div>
 
@@ -73,21 +72,19 @@ export function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-background dark:bg-background rounded-lg shadow-lg animate-fade-in">
             <nav className="flex flex-col space-y-4 px-4">
-              <a href="#" className="text-foreground hover:text-burgundy transition-colors">
+              <a href="#" className="text-foreground hover:text-accent transition-colors">
                 Home
               </a>
-              <a href="#about" className="text-foreground hover:text-burgundy transition-colors">
+              <a href="#about" className="text-foreground hover:text-accent transition-colors">
                 About
               </a>
-              <a href="#events" className="text-foreground hover:text-burgundy transition-colors">
+              <a href="#events" className="text-foreground hover:text-accent transition-colors">
                 Events
               </a>
-              <a href="#contact" className="text-foreground hover:text-burgundy transition-colors">
+              <a href="#contact" className="text-foreground hover:text-accent transition-colors">
                 Contact
               </a>
-              <Button className="bg-burgundy hover:bg-burgundy/80 text-white w-full">
-                Donate
-              </Button>
+              <DonateModal className="w-full" />
             </nav>
           </div>
         )}

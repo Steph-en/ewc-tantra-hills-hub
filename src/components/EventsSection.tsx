@@ -48,7 +48,7 @@ export function EventsSection() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Upcoming <span className="text-burgundy">Events</span>
+            Upcoming <span className="text-accent">Events</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Join us for worship, fellowship, and spiritual growth
@@ -59,7 +59,7 @@ export function EventsSection() {
           <Card className="overflow-hidden">
             <div className="grid md:grid-cols-2">
               <div className="order-2 md:order-1 p-6 md:p-8 flex flex-col justify-center">
-                <Badge variant="outline" className="w-fit mb-4 bg-burgundy/10 text-burgundy border-burgundy">
+                <Badge variant="outline" className="w-fit mb-4 bg-accent/10 text-accent border-accent">
                   Featured Event
                 </Badge>
                 <h3 className="text-2xl md:text-3xl font-bold mb-2">
@@ -72,7 +72,7 @@ export function EventsSection() {
                 <p className="mb-6">
                   {events[0].description}
                 </p>
-                <Button className="bg-burgundy hover:bg-burgundy/80 text-white w-fit">
+                <Button className="bg-accent hover:bg-accent/80 text-white w-fit">
                   Save the Date
                 </Button>
               </div>

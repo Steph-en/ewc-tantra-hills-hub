@@ -1,16 +1,91 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 export function ContactSection() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({ ...prev, [id]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Validate form
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill out all required fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // In a real application, you would send this data to your backend
+      console.log("Form submitted:", formData);
+      
+      // Simulate API call with a timeout
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for contacting us. We'll respond shortly.",
+      });
+      
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      toast({
+        title: "Failed to send message",
+        description: "There was an error sending your message. Please try again.",
+        variant: "destructive",
+      });
+      console.error("Error submitting form:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get in <span className="text-burgundy">Touch</span>
+            Get in <span className="text-accent">Touch</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             We'd love to hear from you and answer any questions
@@ -20,39 +95,64 @@ export function ContactSection() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="bg-background p-8 rounded-lg shadow-sm">
             <h3 className="text-xl font-bold mb-6">Send us a Message</h3>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
-                    Your Name
+                    Your Name <span className="text-destructive">*</span>
                   </label>
-                  <Input id="name" placeholder="John Doe" />
+                  <Input 
+                    id="name" 
+                    placeholder="John Doe" 
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
-                    Your Email
+                    Your Email <span className="text-destructive">*</span>
                   </label>
-                  <Input id="email" type="email" placeholder="john@example.com" />
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    placeholder="john@example.com" 
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
               </div>
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-sm font-medium">
                   Subject
                 </label>
-                <Input id="subject" placeholder="How can we help?" />
+                <Input 
+                  id="subject" 
+                  placeholder="How can we help?" 
+                  value={formData.subject}
+                  onChange={handleChange}
+                />
               </div>
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">
-                  Message
+                  Message <span className="text-destructive">*</span>
                 </label>
                 <Textarea
                   id="message"
                   placeholder="Your message here..."
                   rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                 />
               </div>
-              <Button className="bg-burgundy hover:bg-burgundy/80 text-white w-full md:w-auto">
-                Send Message
+              <Button 
+                className="bg-black hover:bg-black/80 text-white w-full md:w-auto"
+                type="submit"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
@@ -62,7 +162,7 @@ export function ContactSection() {
               <h3 className="text-xl font-bold mb-6">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <MapPin className="h-5 w-5 text-burgundy mr-4 mt-1" />
+                  <MapPin className="h-5 w-5 text-accent mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium">Our Location</h4>
                     <p className="text-muted-foreground">
@@ -71,14 +171,14 @@ export function ContactSection() {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Phone className="h-5 w-5 text-burgundy mr-4 mt-1" />
+                  <Phone className="h-5 w-5 text-accent mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium">Phone Number</h4>
                     <p className="text-muted-foreground">+233 20 123 4567</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Mail className="h-5 w-5 text-burgundy mr-4 mt-1" />
+                  <Mail className="h-5 w-5 text-accent mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium">Email Address</h4>
                     <p className="text-muted-foreground">
@@ -112,19 +212,19 @@ export function ContactSection() {
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="bg-burgundy hover:bg-burgundy/80 text-white p-2 rounded-full"
+                  className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
-                  className="bg-burgundy hover:bg-burgundy/80 text-white p-2 rounded-full"
+                  className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a
                   href="#"
-                  className="bg-burgundy hover:bg-burgundy/80 text-white p-2 rounded-full"
+                  className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
                   <Youtube className="h-5 w-5" />
                 </a>

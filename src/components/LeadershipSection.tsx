@@ -30,7 +30,7 @@ export function LeadershipSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="text-burgundy">Leadership</span>
+            Our <span className="text-accent">Leadership</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Meet the dedicated leaders guiding our congregation
@@ -49,7 +49,7 @@ export function LeadershipSection() {
                   />
                 </div>
                 <div className="p-6 md:w-3/5">
-                  <h3 className="text-xl font-semibold text-burgundy">
+                  <h3 className="text-xl font-semibold text-accent">
                     {leader.name}
                   </h3>
                   <p className="text-sm text-muted-foreground mb-4">
