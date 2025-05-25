@@ -16,7 +16,7 @@ type SlideType = {
 const slides: SlideType[] = [
   {
     type: "video",
-    src: "https://assets.mixkit.co/videos/preview/mixkit-church-with-large-chandeliers-and-stained-glass-windows-35682-large.mp4",
+    src: "https://res.cloudinary.com/degd6ahfu/video/upload/f_auto:video,q_auto/v1/EWC/ldv5ly6mwj4zqwnfyigl",
     title: "Welcome to Empowerment Worship Center",
     description: "Tantra Hills Campus",
     buttonText: "Join Us",
