@@ -24,7 +24,7 @@ const slides: SlideType[] = [
   },
   {
     type: "image",
-    src: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/uhzjjlf89dgabt6qxddd",
+    src: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/nlumbchi5nfnmqvvahwe",
     alt: "Church interior",
     title: "Experience God's Presence",
     description: "Join us for worship every Sunday",
@@ -33,7 +33,7 @@ const slides: SlideType[] = [
   },
   {
     type: "image",
-    src: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/svjt50wu2bfz40aues6a",
+    src: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/dnfesivplyyxmmealytk",
     alt: "Church interior",
     title: "Maiden Service Coming Soon",
     description: "June 2025 - Be part of history",
@@ -71,7 +71,7 @@ export function HeroCarousel() {
 
   return (
     <>
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-[100vh] overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={index}

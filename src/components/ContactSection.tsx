@@ -166,7 +166,7 @@ export function ContactSection() {
                   <div>
                     <h4 className="font-medium">Our Location</h4>
                     <p className="text-muted-foreground">
-                      Tantra Hills, Accra, Ghana
+                      Tantra Hill, Accra, Ghana
                     </p>
                   </div>
                 </div>
@@ -174,7 +174,7 @@ export function ContactSection() {
                   <Phone className="h-5 w-5 text-accent mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium">Phone Number</h4>
-                    <p className="text-muted-foreground">+233 20 123 4567</p>
+                    <p className="text-muted-foreground">+233 59 353 9507</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -193,15 +193,15 @@ export function ContactSection() {
               <h3 className="text-xl font-bold mb-6">Service Times</h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-medium">Sunday Service</h4>
-                  <p className="text-muted-foreground">9:00 AM - 12:00 PM</p>
+                  <h4 className="font-medium">Sunday - Family Service</h4>
+                  <p className="text-muted-foreground">9:00 AM - 11:00 AM</p>
                 </div>
                 <div>
-                  <h4 className="font-medium">Wednesday Bible Study</h4>
-                  <p className="text-muted-foreground">6:30 PM - 8:00 PM</p>
+                  <h4 className="font-medium">Tuesday - Community Circles</h4>
+                  <p className="text-muted-foreground">6:00 PM - 8:00 PM</p>
                 </div>
                 <div>
-                  <h4 className="font-medium">Friday Prayers</h4>
+                  <h4 className="font-medium">Thursday - Prophetic Service</h4>
                   <p className="text-muted-foreground">7:00 PM - 9:00 PM</p>
                 </div>
               </div>

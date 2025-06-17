@@ -56,7 +56,7 @@ export function AboutSection() {
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1438032005730-c779502df39b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                  src="https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/p30lnk8czjdods39b0lb" 
                   alt="Church worship"
                   className="w-full h-full object-cover"
                 />
@@ -65,16 +65,16 @@ export function AboutSection() {
             <Card className="overflow-hidden row-span-2">
               <CardContent className="p-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1545987796-200677ee1011?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                  src="https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/f8cv7clli3p6xvbzz6cp" 
                   alt="Church community"
-                  className="h-[1] object-cover"
+                  className="h-[493.5px] w-full object-cover"
                 />
               </CardContent>
             </Card>
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <img 
-                  src="https://images.unsplash.com/photo-1591123120675-6f7f1aae0e5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                  src="https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/yuvipu0skc1zldw5rzc4" 
                   alt="Worship service"
                   className="w-full h-full object-cover"
                 />
