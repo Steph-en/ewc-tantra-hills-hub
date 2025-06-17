@@ -1,9 +1,9 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Facebook, Instagram, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, } from "lucide-react";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { useToast } from "@/hooks/use-toast";
 
 export function ContactSection() {
@@ -182,7 +182,7 @@ export function ContactSection() {
                   <div>
                     <h4 className="font-medium">Email Address</h4>
                     <p className="text-muted-foreground">
-                      tantrahills@empowermentworshipcenter.org
+                      ewctantrahills@gmail.com
                     </p>
                   </div>
                 </div>
@@ -211,22 +211,22 @@ export function ContactSection() {
               <h3 className="text-xl font-bold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/ewctantrahillscampus/"
                   className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/ewctantrahillscampus/"
                   className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
-                  <Instagram className="h-5 w-5" />
+                  <FaInstagram className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.tiktok.com/@ewc.tantra.hills?lang=en"
                   className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
-                  <Youtube className="h-5 w-5" />
+                  <FaTiktok className="h-5 w-5" />
                 </a>
               </div>
             </div>

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
@@ -17,6 +16,15 @@ export function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
+    }
+  };
 
   return (
     <header
@@ -37,22 +45,22 @@ export function Header() {
 
           <div className="hidden md:flex items-center space-x-8">
             <nav className="flex items-center space-x-6">
-              <a href="#" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
+              <a href="#" onClick={(e) => scrollToSection(e, "hero")} className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
                 Home
               </a>
-              <a href="#about" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
+              <a href="#about" onClick={(e) => scrollToSection(e, "about")} className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
                 About
               </a>
-              <a href="#events" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
+              <a href="#events" onClick={(e) => scrollToSection(e, "events")} className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
                 Events
               </a>
-              <a href="#contact" className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
+              <a href="#contact" onClick={(e) => scrollToSection(e, "contact")} className={`${isScrolled ? 'text-foreground' : 'text-white'} hover:text-accent dark:hover:text-gray-300 transition-colors`}>
                 Contact
               </a>
             </nav>
             <div className="flex items-center space-x-4">
-              <ThemeToggle />
-              <DonateModal />
+              {/* <ThemeToggle /> */}
+              {/* <DonateModal /> */}
             </div>
           </div>
 
@@ -72,16 +80,16 @@ export function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-background dark:bg-background rounded-lg shadow-lg animate-fade-in">
             <nav className="flex flex-col space-y-4 px-4">
-              <a href="#" className="text-foreground hover:text-accent transition-colors">
+              <a href="#" onClick={(e) => scrollToSection(e, "hero")} className="text-foreground hover:text-accent transition-colors">
                 Home
               </a>
-              <a href="#about" className="text-foreground hover:text-accent transition-colors">
+              <a href="#about" onClick={(e) => scrollToSection(e, "about")} className="text-foreground hover:text-accent transition-colors">
                 About
               </a>
-              <a href="#events" className="text-foreground hover:text-accent transition-colors">
+              <a href="#events" onClick={(e) => scrollToSection(e, "events")} className="text-foreground hover:text-accent transition-colors">
                 Events
               </a>
-              <a href="#contact" className="text-foreground hover:text-accent transition-colors">
+              <a href="#contact" onClick={(e) => scrollToSection(e, "contact")} className="text-foreground hover:text-accent transition-colors">
                 Contact
               </a>
               <DonateModal className="w-full" />

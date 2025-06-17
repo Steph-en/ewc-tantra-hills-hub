@@ -67,14 +67,14 @@ export function AboutSection() {
                 <img 
                   src="https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/f8cv7clli3p6xvbzz6cp" 
                   alt="Church community"
-                  className="h-[493.5px] w-full object-cover"
+                  className="h-[390px] w-full object-cover"
                 />
               </CardContent>
             </Card>
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <img 
-                  src="https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/yuvipu0skc1zldw5rzc4" 
+                  src="https://res.cloudinary.com/degd6ahfu/image/upload/v1750172864/CMPL1941_idywcd.jpg" 
                   alt="Worship service"
                   className="w-full h-full object-cover"
                 />

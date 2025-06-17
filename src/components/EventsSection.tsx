@@ -80,7 +80,7 @@ export function EventsSection() {
                 <img
                   src={events[0].image}
                   alt={events[0].title}
-                  className="w-full h-full object-cover min-h-[300px]"
+                  className="w-full h-50 object-cover min-h-[300px]"
                 />
               </div>
             </div>
