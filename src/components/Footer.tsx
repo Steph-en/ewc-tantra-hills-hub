@@ -1,5 +1,6 @@
 
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 import { DonateModal } from "./DonateModal";
 
 export function Footer() {
@@ -20,25 +21,25 @@ export function Footer() {
             </p>
             <div className="flex space-x-4 mt-6">
               <a
-                href="#"
+                href="https://www.facebook.com/ewctantrahillscampus/"
                 className="bg-accent hover:bg-accent/80 text-white p-2 rounded-full"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/ewctantrahillscampus/"
                 className="bg-accent hover:bg-accent/80 text-white p-2 rounded-full"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.tiktok.com/@ewc.tantra.hills?lang=en"
                 className="bg-accent hover:bg-accent/80 text-white p-2 rounded-full"
                 aria-label="YouTube"
               >
-                <Youtube className="h-5 w-5" />
+                <FaTiktok className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -49,15 +50,15 @@ export function Footer() {
               <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a></li>
               <li><a href="#events" className="text-gray-300 hover:text-white transition-colors">Events</a></li>
               <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
-              <li className="pt-2"><DonateModal /></li>
+              {/* <li className="pt-2"><DonateModal /></li> */}
             </ul>
           </div>
           <div>
             <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>Tantra Hills, Accra, Ghana</p>
-              <p>+233 20 123 4567</p>
-              <p>tantrahills@empowermentworshipcenter.org</p>
+              <p>Tantra Hill, Accra, Ghana</p>
+              <p>+233 59 353 9507</p>
+              <p>ewctantrahills@gmail.com</p>
             </address>
           </div>
         </div>
