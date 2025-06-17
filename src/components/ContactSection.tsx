@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Facebook, } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook } from "lucide-react";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 export function ContactSection() {
   const { toast } = useToast();
@@ -50,11 +51,21 @@ export function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      // In a real application, you would send this data to your backend
-      console.log("Form submitted:", formData);
-      
-      // Simulate API call with a timeout
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const templateParams = {
+        to_name: "EWC Tantra Hills", // The recipient's name
+        from_name: formData.name,
+        reply_to: formData.email, // This will set the reply-to header
+        from_email: formData.email,
+        subject: formData.subject || 'Contact Form Submission',
+        message: formData.message,
+      };
+
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
       
       toast({
         title: "Message Sent!",
@@ -212,18 +223,24 @@ export function ContactSection() {
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/ewctantrahillscampus/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
                   href="https://www.instagram.com/ewctantrahillscampus/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
                   <FaInstagram className="h-5 w-5" />
                 </a>
                 <a
                   href="https://www.tiktok.com/@ewc.tantra.hills?lang=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-black hover:bg-black/80 text-white p-2 rounded-full"
                 >
                   <FaTiktok className="h-5 w-5" />
