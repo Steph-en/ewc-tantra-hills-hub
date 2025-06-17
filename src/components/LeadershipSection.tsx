@@ -13,13 +13,13 @@ const leaders: Leader[] = [
   {
     name: "Prophet Gideon Danso",
     role: "General Overseer",
-    image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/w3i3unoq8nkrqbjevjjs",
+    image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/ptwrfujhetbqy2suhlua",
     bio: "Prophet Gideon Danso is the visionary leader and founder of Empowerment Worship Center, with a powerful ministry that has transformed countless lives across Ghana and beyond.",
   },
   {
     name: "Pastor Desmond Larbi",
     role: "Campus Lead Pastor",
-    image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/nqxbmzs7iekoulcmqouk",
+    image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/gmxowcvuwp6sfeldgjem",
     bio: "Pastor Desmond Larbi leads the Tantra Hills Campus with dedication and passion, bringing years of ministry experience and a heart for community transformation.",
   },
 ];
@@ -45,7 +45,7 @@ export function LeadershipSection() {
                   <img
                     src={leader.image}
                     alt={leader.name}
-                    className="h-full w-full object-cover"
+                    className="h-60 w-full object-cover"
                   />
                 </div>
                 <div className="p-6 md:w-3/5">

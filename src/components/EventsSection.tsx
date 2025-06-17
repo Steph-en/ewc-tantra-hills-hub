@@ -15,30 +15,30 @@ type Event = {
 
 const events: Event[] = [
   {
-    title: "Maiden Service",
-    date: "June 2, 2024",
-    time: "9:00 AM",
-    description: "Join us for the historic first service at our new Tantra Hills Campus. Experience powerful worship, life-changing messages, and connect with your community.",
+    title: "Stand In The Gap",
+    date: "June 26th - 28th, 2025",
+    time: "6:00 PM",
+    description: "The event will feature a powerful army of ministers and worship led by EWC's GLP Gideon Danso. This three-day event is designed to empower believers to stand in the gap through prayer, worship, and the Word of God.",
     isFeatured: true,
-    image: "https://images.unsplash.com/photo-1507036066871-b7e8032b3dea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/lbnfqhzvgow2ktfgw7zt",
   },
   {
-    title: "Midweek Service",
-    date: "June 5, 2024",
-    time: "6:30 PM",
-    description: "Our Wednesday service focuses on Bible study and prayer, helping you grow in your faith journey.",
+    title: "Maiden Service",
+    date: "July, 2025",
+    time: "",
+    description: "Join us for the historic first service at our new Tantra Hills Campus. Experience powerful worship, life-changing messages, and connect with your community.",
   },
   {
-    title: "Youth Service",
-    date: "June 9, 2024",
-    time: "4:00 PM",
-    description: "A special service designed for young adults and teenagers with contemporary worship and relevant teachings.",
+    title: "Fixed Summer Camp",
+    date: "August, 2025",
+    time: "",
+    description: "JOIN TEENS FROM ACROSS THE COUNTRY FOR ONE WEEK OF CELEBRATION, ADVENTURE, FUN AND IMPARTATION. ACTIVITIES INCLUDE BIBLE STUDY, PRAISE & WORSHIP, HOLY GHOST & WATER BAPTISM, PAINTBALLING, ROCK CLIMBING, BONFIRE NIGHT, CAREER TALKS, SUMMERFEST AND SO MUCH MORE.",
   },
   {
-    title: "Community Outreach",
-    date: "June 15, 2024",
-    time: "10:00 AM",
-    description: "Join us as we reach out to the Tantra Hills community with love and practical assistance.",
+    title: "Heaven on Earth",
+    date: "November, 2025",
+    time: "",
+    description: "The 'Heaven on Earth' conference hosted by the Empowerment Worship Centre (EWC) is a multi-day event focused on experiencing God's presence and power, often with a theme of bringing heaven's reality to earth.",
   },
 ];
 
