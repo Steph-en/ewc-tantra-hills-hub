@@ -1,8 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar } from "lucide-react";
+import { Calendar, ExternalLink } from "lucide-react";
 
 type Event = {
   title: string;
@@ -11,6 +10,7 @@ type Event = {
   description: string;
   isFeatured?: boolean;
   image?: string;
+  link?: string;
 };
 
 const events: Event[] = [
@@ -27,18 +27,21 @@ const events: Event[] = [
     date: "July, 2025",
     time: "",
     description: "Join us for the historic first service at our new Tantra Hills Campus. Experience powerful worship, life-changing messages, and connect with your community.",
+    link: "https://www.instagram.com/ewctantrahillscampus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     title: "Fixed Summer Camp",
     date: "August, 2025",
     time: "",
     description: "JOIN TEENS FROM ACROSS THE COUNTRY FOR ONE WEEK OF CELEBRATION, ADVENTURE, FUN AND IMPARTATION. ACTIVITIES INCLUDE BIBLE STUDY, PRAISE & WORSHIP, HOLY GHOST & WATER BAPTISM, PAINTBALLING, ROCK CLIMBING, BONFIRE NIGHT, CAREER TALKS, SUMMERFEST AND SO MUCH MORE.",
+    link: "https://fixedsummercamp.com/",
   },
   {
     title: "Heaven on Earth",
     date: "November, 2025",
     time: "",
     description: "The 'Heaven on Earth' conference hosted by the Empowerment Worship Centre (EWC) is a multi-day event focused on experiencing God's presence and power, often with a theme of bringing heaven's reality to earth.",
+    link: "https://www.empowermentworshipcentre.org",
   },
 ];
 
@@ -101,8 +104,9 @@ export function EventsSection() {
                 </p>
               </CardContent>
               <CardFooter className="mt-auto">
-                <Button variant="outline" className="w-full">
-                  Learn More
+                <Button variant="outline" className="w-full" onClick={() => window.open(event.link, '_blank')}>
+                  Learn More 
+                  {event.link && <ExternalLink className="w-4 h-4 ml-2" />}
                 </Button>
               </CardFooter>
             </Card>
