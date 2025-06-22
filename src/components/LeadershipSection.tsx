@@ -13,7 +13,8 @@ const leaders: Leader[] = [
   {
     name: "Prophet Gideon Danso",
     role: "Global Lead Pastor",
-    image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/ptwrfujhetbqy2suhlua",
+    // image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/ptwrfujhetbqy2suhlua",
+    image: "https://images.squarespace-cdn.com/content/v1/635bb8b408cab54e825c1cdc/b79b6698-ae46-4c1a-9724-3f7b37e364dd/IMG_7297.jpg?format=750w",
     bio: "Prophet Gideon Danso is the visionary leader and founder of Empowerment Worship Centre, with a powerful ministry that has transformed countless lives across Ghana and beyond.",
   },
   {
