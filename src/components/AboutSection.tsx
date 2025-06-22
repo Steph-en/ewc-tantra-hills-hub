@@ -9,7 +9,7 @@ export function AboutSection() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            About <span className="text-accent">Empowerment Worship Center</span>
+            About <span className="text-accent">Empowerment Worship Centre</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A place of transformation, empowerment and divine encounter
@@ -20,7 +20,7 @@ export function AboutSection() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Tantra Hills Campus</h3>
             <p className="mb-6 text-muted-foreground">
-              Empowerment Worship Center's Tantra Hills Campus is the newest addition 
+              Empowerment Worship Centre's Tantra Hills Campus is the newest addition 
               to our growing family of worship centers. Led by Pastor Desmond Larbi, 
               this campus carries the vision of Prophet Gideon Danso to transform lives 
               through the power of God's word.

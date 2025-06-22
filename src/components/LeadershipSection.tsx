@@ -14,7 +14,7 @@ const leaders: Leader[] = [
     name: "Prophet Gideon Danso",
     role: "General Overseer",
     image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/ptwrfujhetbqy2suhlua",
-    bio: "Prophet Gideon Danso is the visionary leader and founder of Empowerment Worship Center, with a powerful ministry that has transformed countless lives across Ghana and beyond.",
+    bio: "Prophet Gideon Danso is the visionary leader and founder of Empowerment Worship Centre, with a powerful ministry that has transformed countless lives across Ghana and beyond.",
   },
   {
     name: "Pastor Desmond Larbi",
