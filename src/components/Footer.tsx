@@ -16,7 +16,7 @@ export function Footer() {
               <span className="font-medium">Tantra Hills</span>
             </div>
             <p className="text-gray-300 max-w-md">
-              Empowerment Worship Center Tantra Hills Campus is dedicated to transforming lives 
+              Empowerment Worship Centre Tantra Hills Campus is dedicated to transforming lives 
               through the word of God and building a community of believers who impact their world.
             </p>
             <div className="flex space-x-4 mt-6">
@@ -63,7 +63,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {currentYear} Empowerment Worship Center - Tantra Hills Campus. All Rights Reserved.</p>
+          <p>&copy; {currentYear} Empowerment Worship Centre - Tantra Hills Campus. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

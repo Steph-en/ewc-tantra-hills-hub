@@ -17,7 +17,7 @@ const slides: SlideType[] = [
   {
     type: "video",
     src: "https://res.cloudinary.com/degd6ahfu/video/upload/f_auto:video,q_auto/v1/EWC/ldv5ly6mwj4zqwnfyigl",
-    title: "Welcome to Empowerment Worship Center",
+    title: "Welcome to Empowerment Worship Centre",
     description: "Tantra Hills Campus",
     buttonText: "Join Us",
     buttonLink: "#events",
