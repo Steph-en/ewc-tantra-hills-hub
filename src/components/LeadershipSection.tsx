@@ -12,7 +12,7 @@ type Leader = {
 const leaders: Leader[] = [
   {
     name: "Prophet Gideon Danso",
-    role: "General Overseer",
+    role: "Global Lead Pastor",
     image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/ptwrfujhetbqy2suhlua",
     bio: "Prophet Gideon Danso is the visionary leader and founder of Empowerment Worship Centre, with a powerful ministry that has transformed countless lives across Ghana and beyond.",
   },
