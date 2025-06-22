@@ -27,9 +27,7 @@ export function AboutSection() {
             </p>
             
             <p className="mb-6 text-muted-foreground">
-              Our mission is to create an atmosphere where people can experience God's 
-              presence, develop their spiritual gifts, and be equipped to make a difference 
-              in their communities.
+              Our mission is to win souls and prepare them for the soon coming of Christ.
             </p>
 
             <div className="space-y-4">
