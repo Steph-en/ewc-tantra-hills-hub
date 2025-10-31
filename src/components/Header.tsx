@@ -38,8 +38,8 @@ export function Header() {
             <span className="text-2xl font-bold text-accent dark:text-white">
               EWC
             </span>
-            <span className={`font-medium ${isScrolled || mobileMenuOpen ? 'text-foreground' : 'text-white'}`}>
-              Tantra Hills
+            <span className={`text-xl font-medium ${isScrolled || mobileMenuOpen ? 'text-foreground' : 'text-white'}`}>
+              Tantra Hill
             </span>
           </a>
 
