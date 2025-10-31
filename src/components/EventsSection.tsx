@@ -23,23 +23,23 @@ const events: Event[] = [
     image: "https://res.cloudinary.com/degd6ahfu/image/upload/f_auto,q_auto/v1/EWC/lbnfqhzvgow2ktfgw7zt",
   },
   {
-    title: "Maiden Service",
-    date: "July, 2025",
-    time: "",
+    title: "Community Circles",
+    date: "Tuesdays",
+    time: "07:00 PM - 09:00 PM",
     description: "Join us for the historic first service at our new Tantra Hills Campus. Experience powerful worship, life-changing messages, and connect with your community.",
     link: "https://www.instagram.com/ewctantrahillscampus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
-    title: "Fixed Summer Camp",
-    date: "August, 2025",
-    time: "",
+    title: "Prophetic Service",
+    date: "Thursdays",
+    time: "07:00 PM - 09:00 PM",
     description: "JOIN TEENS FROM ACROSS THE COUNTRY FOR ONE WEEK OF CELEBRATION, ADVENTURE, FUN AND IMPARTATION. ACTIVITIES INCLUDE BIBLE STUDY, PRAISE & WORSHIP, HOLY GHOST & WATER BAPTISM, PAINTBALLING, ROCK CLIMBING, BONFIRE NIGHT, CAREER TALKS, SUMMERFEST AND SO MUCH MORE.",
     link: "https://fixedsummercamp.com/",
   },
   {
-    title: "Heaven on Earth",
-    date: "November, 2025",
-    time: "",
+    title: "Family Service",
+    date: "Sunday",
+    time: "09:00 AM - 11:00 AM",
     description: "The 'Heaven on Earth' conference hosted by the Empowerment Worship Centre (EWC) is a multi-day event focused on experiencing God's presence and power, often with a theme of bringing heaven's reality to earth.",
     link: "https://www.empowermentworshipcentre.org",
   },
@@ -51,7 +51,7 @@ export function EventsSection() {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Upcoming <span className="text-accent">Events</span>
+            Our <span className="text-accent">Amazing </span>Services
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Join us for worship, fellowship, and spiritual growth
